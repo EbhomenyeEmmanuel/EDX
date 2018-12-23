@@ -68,7 +68,7 @@ public Fraction (int num, int denom){
     return new Fraction(num, denom);
   }   
  }
-  
+   @Override
   public boolean equals(Object obj){
  //Check if the instances are pointing to themselves 
    if (this == obj){
@@ -91,6 +91,7 @@ public Fraction (int num, int denom){
  }
  
  //Override hashCode since equals method was overrided
+   @Override
  public int hashCode(){
    int hash = 7;
    hash = 31 * hash + this.numerator;
@@ -103,7 +104,7 @@ public Fraction (int num, int denom){
   int z =  gcd(numerator, denominator);
    numerator /= z;
     denominator /= z;
-        System.out.printf("%s%d/%d", "Simplest form " , numerator, denominator);     
+        //System.out.printf("%d/%d" , numerator, denominator);     
  }
   
  public static int gcd(int num, int denom){

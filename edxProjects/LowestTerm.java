@@ -11,4 +11,5 @@ public class LowestTerm {
     denom /= z;
         System.out.printf("%s%d/%d", "Simplest form " , num, denom); 
     }
+    
 }

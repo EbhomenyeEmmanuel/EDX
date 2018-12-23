@@ -4,19 +4,21 @@ import java.util.Random;
 public class workArea {
     
     public static void main (String args []){
-        Random random = new Random();
-      
-        int a = 0;
-        while (a == 0){
-            
-         int x = random.nextInt(101);
-        char y = (char)x;
-        System.out.println("Number is " + x);
-        System.out.println("Character is " + y);
-        if (x ==100){
-            break;
+        //C c = new C();
+        C[] elements = {new A(), new B(), new C(), new D()};
+        for (int i = 0; i < elements.length; i++) {
+            System.out.println(elements[i]);
+            elements[i].method1();
+            System.out.println();
+            elements[i].method2();
+            System.out.println();
+            System.out.println();
         }
-    }
+        Truck mytruck = new Truck();
+        System.out.println(mytruck);
+        mytruck.m1();
+        mytruck.m2();
+
     }
             
 }
